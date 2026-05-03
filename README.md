@@ -11,53 +11,89 @@
 
 <h1>YouTube Agency</h1>
 
-<p><strong>A team of agents running your YouTube channel.</strong></p>
+<p><strong>Your YouTube channel, encoded.</strong></p>
 
 <p>
   <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.0.0-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="Version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="License"></a>
+  <a href="https://heuresis.ai"><img src="https://img.shields.io/badge/a-Heuresis%20workspace-b45309?style=flat-square&labelColor=09090b&color=b45309" alt="Heuresis"></a>
 </p>
 
 </div>
 
 <br/>
 
-> **The agent is thin. The workspace is smart. The workspace IS the product.**
+<img alt="YouTube Agency workspace — authority script drafting live, retention signals, agents working" src="docs/assets/hero-workspace.png" width="100%">
 
-A team of AI agents running every department of your YouTube channel. Each agent carries *your* taste. Your hook style. Your retention instincts. Your sponsor judgement. Your back-end offer.
+<p align="center"><em>Your YouTube channel, in one folder.</em></p>
 
-Not workflow automation. Encoded intent. The agents don't just follow rules — they make decisions the way you would, read signals the way you read them, and get sharper every cycle.
+<br/>
 
-You stay in the loop where your judgement counts. The rest runs while you sleep.
+---
+
+## What is this?
+
+Think of it like this: a great YouTube channel has departments — research, hook engineering, retention, scripting, thumbnails, distribution, and the back-end offer that turns viewers into customers. Each one has standards, instincts, and reps the creator carries in their head.
+
+**YouTube Agency is that whole org chart, written down as a folder of plain markdown files.**
+
+Open the folder. Hand it to any AI agent — Claude, ChatGPT, Cursor, OpenClaw. The agent reads `SYSTEM.md`, learns your channel, and starts running a department.
+
+You stay in the loop on the calls that need taste. Hook decay gets caught the day it starts, not after three videos buried by the algorithm.
+
+| Step | What happens |
+|---|---|
+| **01** | Clone the folder |
+| **02** | Fill in `company.yaml` with your channel — niche, audience, voice, back-end offer |
+| **03** | Hand the folder to any agent. It reads `SYSTEM.md`, becomes a YouTube channel operator, and starts shipping |
+
+<br/>
+
+---
+
+## Without this · With this
+
+| Without | With |
+|---|---|
+| The editor drifts off-style by month 3. The cuts feel like someone else's channel. | Editing rhythm is encoded. Every editor brief ships with the channel's exact pacing. |
+| Hook quality decays the moment you stop writing every script. | Hook patterns from your top-decile videos are encoded. Every script clears the hook density floor. |
+| The channel becomes whatever the last freelancer made — not what you would have made. | Your taste lives in `agents/` and `reference/`. Every output is judged against it before it ships. |
+| You upload, the algorithm decides, and you guess what to do next. | A six-layer leak audit runs every Monday. CTR, AVD, and back-end conversion get diagnosed, not guessed. |
+| One long-form ships. The eight pieces of distribution gets done sometimes. | Every published video triggers a repurposing cascade — 8 shorts, 4 threads, an email — automatically. |
+
+<br/>
+
+---
 
 ## Try it
 
-1. Clone:
+```bash
+git clone https://github.com/Heuresis/YouTube-Agency.git your-channel
+cd your-channel
+```
 
-   ```bash
-   git clone https://github.com/Heuresis/YouTube-Agency.git
-   ```
+Fill in `company.yaml` with your channel context. Then ask for what you need:
 
-2. Fill in `company.yaml` with your channel context.
+```
+/build-niche                 a niche definition
+/build-audience              an ideal viewer profile
+/design-offer                a back-end offer document
+/build-channel-architecture  a channel architecture document
+/idea-farm                   a 20+ idea backlog
+/write-authority-script      a niched script
+/write-reach-script          a broad-appeal script
+/write-pinned-vsl            a pinned video sales letter
+/title-thumbnail-pair        title + thumbnail concepts with predicted CTR
+/leak-audit                  a six-layer funnel diagnostic
+```
 
-3. Ask for what you need:
+Works with Claude, ChatGPT, Cursor, OpenClaw — anything that reads files.
 
-   ```
-   /build-niche                 a niche definition
-   /build-audience              an ideal viewer profile
-   /design-offer                a back-end offer document
-   /build-channel-architecture  a channel architecture document
-   /idea-farm                   a 20+ idea backlog
-   /write-authority-script      a niched script
-   /write-reach-script          a broad-appeal script
-   /write-pinned-vsl            a pinned video sales letter
-   /title-thumbnail-pair        title + thumbnail concepts with predicted CTR
-   /leak-audit                  a six-layer funnel diagnostic
-   ```
+Full setup walkthrough: **[Quickstart](docs/QUICKSTART.md)** · 30 minutes.
 
-Works with Claude, ChatGPT, Cursor, or any AI tool that reads files.
+<br/>
 
-Full setup: **[Quickstart](docs/QUICKSTART.md)** · 30 minutes.
+---
 
 ## What's inside the folder
 
@@ -70,7 +106,7 @@ youtube-agency/
 ├── ENCODING.md          ←  11-compartment schema
 ├── company.yaml         ←  YOUR channel · fill once
 │
-├── agents/              ←  22 AI specialists · an org chart of a real studio
+├── agents/              ←  22 specialists · an org chart of a real studio
 │      youtube-ceo                  top orchestrator
 │      2 arc orchestrators  ·  8 department heads  ·  11 specialists
 │
@@ -128,6 +164,10 @@ youtube-agency/
 
 Each file is plain text. Each folder is owned by you. Nothing is locked behind an app.
 
+<br/>
+
+---
+
 ## Each video ships with
 
 - **Script** — authority or reach mode, hook density verified, retention floor cleared
@@ -139,6 +179,10 @@ Each file is plain text. Each folder is owned by you. Nothing is locked behind a
 - **Post-publish audit** — retention curve diagnosed at T+7 days; pattern fed back into the library
 
 Every action leaves a receipt. Every video updates the encoded brain. Every cycle, the channel gets sharper.
+
+<br/>
+
+---
 
 ## Runs while you sleep
 
@@ -153,9 +197,13 @@ Wire the workspace into a runtime with **cron, webhook, and event triggers**. Th
 
 Triggers are declared in [`paperclip.manifest.yaml`](paperclip.manifest.yaml). Wire them to your scheduler and the workspace operates as a 24/7 channel team.
 
+<br/>
+
+---
+
 ## What you get
 
-**9 agent-first pillars. 22 agents. 34 skills.**
+**9 agent-first departments. 22 agents. 34 skills.**
 
 - **Foundations** — niche · audience · offer · channel architecture · creator voice
 - **Content Engine** — idea farm · research · dual-mode mix · series architecture
@@ -167,7 +215,11 @@ Triggers are declared in [`paperclip.manifest.yaml`](paperclip.manifest.yaml). W
 - **Operations** — SOPs per team configuration
 - **Intelligence** — KPI dashboard · leak audits · library compound
 
-Each pillar is not a set of rules. Each is a full department rebuilt as agent-first — agents that carry your intent, read signals, and make decisions.
+Each department is a full department rebuilt as agent-first — agents that carry your taste, read signals, and make decisions.
+
+<br/>
+
+---
 
 ## Runs in any compatible agent runtime
 
@@ -181,15 +233,25 @@ The workspace is files. Files run anywhere that reads files.
 
 Runtime-swappable. Your workspace is the asset. The runtime is replaceable.
 
+<br/>
+
+---
+
 ## Why this matters
 
-Every founder-led creator business eventually hits the same wall: the founder IS every department. The channel stops when the founder stops.
+Every founder-led creator business eventually hits the same wall: the founder IS every department.
 
-Encoding changes the shape of the week. Your taste — hook style, retention instincts, sponsor judgement, the patterns you carry in your head — gets written into agents that run each department on your judgement. The founder stays. The judgement scales. The channel compounds.
+The editor drifts off-style by month 3. Hook quality decays the moment you stop writing every script. The channel becomes whatever the last freelancer made — not what you would have made. You upload, the algorithm decides, and you guess what to do next.
 
-Every cycle, each department runs it gets sharper. The gap between your channel and every creator operating off memory widens.
+Encoding changes the shape of the week. Your taste — hook style, retention instincts, sponsor judgement, the patterns you carry in your head — gets written into agents that run each department on your behalf. The creator stays. The taste scales. The channel compounds.
+
+Every cycle, each department gets sharper. The gap between your channel and every creator operating off memory widens.
 
 This is one template in the library. More shipping, vertical by vertical. Every outcome claim we publish traces to a real deployment with a real operator. Thesis, method, and source go public on ideas. Receipts wait their turn.
+
+<br/>
+
+---
 
 ## Documentation
 
