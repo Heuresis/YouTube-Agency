@@ -1,0 +1,180 @@
+# paperclip.manifest.yaml — runtime trigger registrations
+#
+# Wire this workspace into any compatible runtime (Paperclip, BusinessOS,
+# any HTTP orchestrator that speaks OpenAPI) to activate cron / webhook /
+# event-driven skills. The workspace stays runtime-agnostic — this manifest
+# is the only file the runtime needs to know about.
+
+apiVersion: workspace/v1
+kind: PaperclipManifest
+metadata:
+  name: youtube-content-os
+  version: 1.0.0
+  description: Encoded operating system for a creator's YouTube channel — front door to an owned back-end offer.
+  author: Heuresis
+
+triggers:
+
+  # ─── Cron triggers ───────────────────────────────────────────────────
+
+  - name: idea-farm-daily
+    type: cron
+    schedule: "0 6 * * *"             # daily 06:00
+    skill: /idea-farm
+    args:
+      mode: refresh-backlog
+      sources: [comments, suggested, trends]
+
+  - name: community-pulse-daily
+    type: cron
+    schedule: "0 9 * * *"             # daily 09:00
+    skill: /community-cadence
+    args:
+      mode: pull-overnight-comments
+      flag_high_signal: true
+
+  - name: leak-audit-weekly
+    type: cron
+    schedule: "0 9 * * 1"             # Monday 09:00
+    skill: /leak-audit
+    args:
+      mode: full-six-layer
+      report_to: creator
+
+  - name: library-compound-weekly
+    type: cron
+    schedule: "0 10 * * 1"            # Monday 10:00
+    skill: /library-compound
+    args:
+      mode: extract-patterns-from-last-7-days
+      review_required: true
+
+  - name: kpi-dashboard-daily
+    type: cron
+    schedule: "0 8 * * *"             # daily 08:00
+    skill: /kpi-dashboard
+    args:
+      mode: daily-pulse
+      report_to: creator
+
+  - name: kpi-dashboard-monthly
+    type: cron
+    schedule: "0 8 1 * *"             # 1st of month 08:00
+    skill: /kpi-dashboard
+    args:
+      mode: monthly-deep-dive
+      report_to: creator
+
+  - name: research-brief-tomorrow-publish
+    type: cron
+    schedule: "0 18 * * *"            # daily 18:00 — research brief for next day's planned video
+    skill: /research-brief
+    args:
+      mode: prepare-next-day
+      auto_run: false
+
+  # ─── Webhook triggers ────────────────────────────────────────────────
+
+  - name: application-received
+    type: webhook
+    path: /webhooks/application-received
+    skill: /build-application-funnel
+    args:
+      mode: qualification-and-routing
+
+  - name: sponsor-inquiry-received
+    type: webhook
+    path: /webhooks/sponsor-inquiry
+    skill: /sponsor-fit
+    args:
+      mode: initial-fit-analysis
+      review_required: true
+
+  - name: subscriber-milestone
+    type: webhook
+    path: /webhooks/subscriber-milestone
+    skill: /community-cadence
+    args:
+      mode: milestone-acknowledgment-draft
+
+  # ─── Event triggers ──────────────────────────────────────────────────
+
+  - name: video-published
+    type: event
+    event: video.published
+    skill: /repurposing-cascade
+    args:
+      mode: full-cascade
+
+  - name: video-published-retention-audit
+    type: event
+    event: video.published
+    delay: 7d
+    skill: /audit-retention
+    args:
+      mode: post-publish-curve-diagnosis
+
+  - name: video-published-title-watcher
+    type: event
+    event: video.published
+    delay: 48h
+    skill: /title-options
+    args:
+      mode: ctr-underperform-retitle-suggest
+      threshold_ctr_pct: 4
+
+  - name: call-completed
+    type: event
+    event: call.completed
+    skill: /sales-call-script
+    args:
+      mode: post-call-followup-kickoff
+
+  - name: comment-high-signal
+    type: event
+    event: comment.flagged
+    skill: /idea-farm
+    args:
+      mode: comment-to-idea
+      review_required: true
+
+  - name: viral-detected
+    type: event
+    event: video.view-velocity-spike
+    skill: /audit-retention
+    args:
+      mode: viral-postmortem
+      report_to: creator
+
+# Triggers above run only when the runtime supports the corresponding event/cron source.
+# Missing triggers degrade gracefully — the workspace remains usable in interactive-only mode.
+
+agents_available:
+  - youtube-ceo
+  - content-orchestrator
+  - monetization-orchestrator
+  - foundations-head
+  - content-head
+  - retention-head
+  - production-head
+  - distribution-head
+  - audience-head
+  - monetization-head
+  - intelligence-head
+
+context_priority:
+  - SYSTEM.md
+  - INVARIANTS.md
+  - ENCODING.md
+  - company.yaml
+  - agents/_INDEX.md
+  - skills/_INDEX.md
+  - spec/
+
+runtime_requirements:
+  reads_markdown: true
+  reads_yaml: true
+  supports_cron: optional
+  supports_webhooks: optional
+  supports_events: optional
+  supports_human_in_the_loop: required

@@ -1,0 +1,5 @@
+---
+description: Set the comment-reply + community-tab cadence and protocols.
+---
+
+Read `skills/community-cadence/SKILL.md` and execute its Process section. Apply the persona overlay of the agent declared in `agent_executor`. Verify per the skill's `verification_layers`. Return output in the declared Output Format.

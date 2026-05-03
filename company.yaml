@@ -1,0 +1,537 @@
+# company.yaml — your channel, encoded
+#
+# Fill every section below. The OS reads this on boot to determine which skills can run.
+# Each section maps 1:1 to a compartment in ENCODING.md.
+# Completeness scoring runs over this file.
+#
+# Conventions:
+# - String values: leave blank ("") if unknown. The OS will flag the gap.
+# - Lists: leave [] if unknown. The OS will flag the gap.
+# - Integers: leave 0 if unknown. The OS will flag the gap.
+# - Booleans: leave false if unknown.
+#
+# Never check this file into a public remote. Never share verbatim.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 1 — Creator Identity Matrix (15%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+creator_identity_matrix:
+  basic_info:
+    creator_name: ""
+    channel_name: ""
+    channel_handle: ""
+    niche: ""                          # finance / business / mindset / tech / fitness / real-estate / productivity / creator-economy / other
+    sub_niche: ""
+    business_model: ""                 # coaching / consulting / info-product / mastermind / agency / hybrid
+    revenue_tier: ""                   # pre-revenue | $5K-$25K/mo | $25K-$100K/mo | $100K-$500K/mo | $500K+/mo
+    years_creating: 0
+    total_subscribers: 0
+    long_form_avg_views: 0
+    short_form_avg_views: 0
+    upload_cadence_long: ""            # weekly / biweekly / monthly / irregular
+    upload_cadence_short: ""           # daily / weekly / never
+
+  brand_voice_architecture:
+    communication_style: ""            # direct / consultative / storytelling / analytical / contrarian
+    tone_framework:
+      primary: ""
+      secondary: ""
+    personality_traits: []
+    language_patterns: []
+    phrases_to_use: []                 # verbatim creator phrases
+    phrases_to_avoid: []
+    persuasion_style: ""               # authority-by-proof / story-first / mechanism-first / contrarian-provocation
+    authority_positioning: ""          # category-king / challenger / insider / outsider-with-edge
+
+  on_camera_persona:
+    delivery_style: ""                 # high-energy / measured / contrarian / warm-instructional / confessional
+    posture_default: ""                # standing / sitting / hybrid
+    framing_default: ""                # medium-close / waist-up / talking-head
+    pace_baseline_wpm: 0
+    pause_rhythm: ""                   # rare / measured / frequent
+    eye_line_default: ""               # camera-direct / off-camera-occasionally
+    energy_arc: ""                     # flat / rising / wave / front-loaded
+    signature_visual_elements: []
+
+  parasocial_trust_contract:
+    what_creator_promises: []
+    what_creator_wont_do: []           # the no-fly zones
+    creator_vs_character_line: ""
+
+  unique_positioning:
+    unique_mechanism: ""
+    category_positioning: ""
+    competitive_differentiation: ""
+    core_philosophy: ""                # one-sentence worldview
+    contrarian_beliefs: []
+
+  archetype:
+    primary: ""                        # long-form-VSL specialist / contrarian-narrator / analytical-explainer / story-driven creator / contrast-format viral specialist / hybrid
+    secondary: ""
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 2 — Audience Intelligence System (18% — HEAVIEST)
+# ─────────────────────────────────────────────────────────────────────────────
+
+audience_intelligence_system:
+  ideal_viewer_profile:
+    demographics:
+      age_range: ""
+      gender_split: ""
+      geography: []
+      income_range: ""
+      education: ""
+    psychographics:
+      identity_aspirations: []
+      pain_points: []                  # 5–10 specific pains
+      desires: []                      # 5–10 outcomes
+      fears: []
+      beliefs_currently_held: []       # the 8 standard belief frames mapped
+      beliefs_to_install: []
+      objections: []                   # min 10
+    behavioral_patterns:
+      what_else_they_watch: []         # adjacent channels (anonymized as types)
+      content_consumption_pattern: "" # binge / scheduled / discover-via-search
+      buying_triggers: []
+      research_behavior: []
+      trust_signals_required: []
+
+  market_sophistication:
+    awareness_level_distribution:
+      unaware_pct: 0
+      problem_aware_pct: 0
+      solution_aware_pct: 0
+      product_aware_pct: 0
+      most_aware_pct: 0
+    primary_awareness_target: ""       # which level the channel calibrates to
+    sophistication_stage: ""           # naive / aware / skeptical / exhausted
+    market_maturity: ""                # emerging / growing / mature / saturated
+    competitive_density: ""            # low / medium / high / saturated
+
+  voice_of_viewer:
+    actual_viewer_language: []         # verbatim phrases from comments, DMs, sales calls, surveys
+    pain_language_patterns: []
+    desire_language_patterns: []
+    objection_patterns: []
+    comment_themes: []
+    survey_responses_summary: ""
+
+  limiting_belief_diagnosis:
+    dominant_belief: ""                # worthless | helpless | hopeless
+    transformation_type: ""            # status | capability | safety
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 3 — Offer Architecture (12%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+offer_architecture:
+  back_end_offers:
+    - offer_name: ""
+      offer_type: ""                   # high-ticket 1:1 / group program / course / mastermind / membership / done-for-you
+      price_point: 0
+      positioning: ""
+      core_promise: ""
+      unique_mechanism: ""
+      transformation_delivered: ""
+      target_avatar: ""                # which segment from compartment 2
+      value_stack: []
+      bonuses: []
+      guarantee: ""
+      risk_reversal: ""
+
+  offer_ladder:
+    lead_magnet: ""
+    tripwire: ""
+    core_offer: ""
+    upsells: []
+    high_ticket: ""
+    continuity: ""
+
+  pricing_psychology:
+    pricing_strategy: ""               # identity-aligned / value-based / competitive / anchor-and-discount
+    payment_options: []
+    comparison_anchoring: ""
+    value_justification: ""
+
+  qualification:
+    qualification_criteria: []
+    disqualification_criteria: []
+    filtering_mechanism: ""            # application / call / typeform
+
+  economics_validation:
+    ltv: 0
+    cac: 0
+    ltv_cac_ratio: 0                   # ≥ 3.0 required
+    gross_margin_pct: 0
+    breakeven_per_cohort: ""
+
+  content_to_offer_bridge:
+    pinned_vsl_url: ""
+    application_funnel_url: ""
+    primary_cta: ""
+    cta_placement_on_authority_videos: ""  # end-only / mid-and-end / soft-throughout
+    cta_placement_on_reach_videos: ""      # channel-architecture-only / soft-end / none
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 4 — Channel Architecture (10%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+channel_architecture:
+  niche_definition:
+    primary_niche: ""
+    sub_niches_covered: []
+    adjacent_niches_for_reach: []
+    out_of_scope_topics: []
+
+  channel_promise:
+    one_sentence_promise: ""
+    deliverable_per_video: ""
+
+  positioning:
+    in_the_market: ""
+    against_named_competitors: []      # anonymized as competitor archetypes
+    differentiation_path: ""
+
+  playlist_architecture:
+    foundational_playlist: ""
+    pillar_playlists: []
+    series_playlists: []
+
+  video_sequencing_path:
+    new_subscriber_path: []
+    belief_installation_path: []
+    handoff_to_offer_path: []
+
+  multi_awareness_strategy:
+    unaware_videos_role: ""
+    problem_aware_videos_role: ""
+    solution_aware_videos_role: ""
+    product_aware_videos_role: ""
+    most_aware_videos_role: ""
+    bridges_between_levels: []
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 5 — Content Engine (8%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+content_engine:
+  content_pillars:
+    - pillar_name: ""
+      pillar_objective: ""
+      topics: []
+      mode: ""                         # authority | reach | both
+      conversion_bridge: ""
+      target_volume_per_month: 0
+
+  brand_pillar_split:                  # default 50/25/15/10
+    primary_pillar_pct: 50
+    secondary_pillar_pct: 25
+    tertiary_pillar_pct: 15
+    experimental_pillar_pct: 10
+
+  mode_mix:                            # the dual-mode ratio
+    authority_pct: 65
+    reach_pct: 35
+    hybrid_pct: 0
+
+  idea_farm:
+    rolling_backlog_size: 20
+    sources:
+      - source: "comments"
+        weight: 20
+      - source: "search"
+        weight: 15
+      - source: "suggested"
+        weight: 15
+      - source: "trends"
+        weight: 10
+      - source: "competitor-analysis"
+        weight: 15
+      - source: "surveys"
+        weight: 10
+      - source: "sales-calls"
+        weight: 15
+
+  research_cadence:
+    research_hours_per_video: 0
+    research_template_used: "reference/templates/research-brief.md"
+    competitive_scan_frequency: ""    # per-video / weekly / monthly
+
+  topic_supply:
+    evergreen_topics: []
+    timely_topics_pipeline: []
+    proven_topic_categories: []
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 6 — Hook & Retention OS (10%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+hook_retention_os:
+  hook_formulas_in_use: []             # PAST / AID / Contrast / Statistic / Curiosity-Gap / Bound-Promise / Contrarian-Frame / Social-Proof-Stack / Universal
+  hook_bank_size: 0
+  signature_hook_patterns: []
+
+  loop_architecture:
+    default_loops_per_long_form: 3
+    loop_open_window: "0:00–0:15"
+    loop_close_window: "around 50%-mark"
+    callback_in_close: true
+
+  pattern_interrupt_cadence:
+    target_seconds_between_interrupts: 50
+    interrupt_types_in_use: ["cut", "b-roll", "super", "music-shift"]
+
+  retention_targets:
+    long_form_avd_target_pct: 50
+    long_form_avd_floor_pct: 35
+    short_form_avd_target_pct: 75
+    avg_view_duration_target_sec: 0
+
+  retention_curve_signature:
+    typical_drop_at_30s_pct: 0
+    typical_drop_at_50pct_pct: 0
+    typical_end_screen_drop_pct: 0
+    known_problem_zones: []
+
+  ctr_targets:
+    long_form_ctr_target_pct: 6
+    long_form_ctr_floor_pct: 4
+    short_form_ctr_target_pct: 0
+
+  banned_hook_patterns: []
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 7 — Production & Post (7%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+production_and_post:
+  script_formats:
+    authority_template: "reference/templates/script-authority.md"
+    reach_template: "reference/templates/script-reach.md"
+    shorts_template: "reference/templates/script-shorts.md"
+    pinned_vsl_template: "reference/templates/pinned-vsl.md"
+
+  script_specs:
+    authority_target_word_count: 2000
+    reach_target_word_count: 1100
+    shorts_target_word_count: 100
+
+  on_camera_direction:
+    energy_baseline: ""                # 1–10 scale
+    pace_baseline: ""                  # words per minute
+    gesture_default: ""                # animated / measured / minimal
+    facial_expression_default: ""
+
+  b_roll_grammar:
+    b_roll_density_per_minute: 0
+    b_roll_sources: []                 # stock-library / archive / shot-for-this-video / screen-recording / animation
+    avoid_b_roll_patterns: []
+
+  editing_rhythm:
+    cut_density_per_minute: 0
+    music_use: ""                      # underscore / hits-only / front-and-back / none
+    sfx_use: ""                        # sparingly / regularly / signature
+    super_use: ""                      # often / sparingly / never
+
+  thumbnail_design_system:
+    composition_default: ""            # face-left-text-right / center-frame / split-half / object-focus
+    contrast_rules: []
+    accent_color: ""                   # hex
+    secondary_color: ""                # hex
+    typography: ""
+    face_grammar: ""                   # surprise / contrarian-stare / smile / open-mouth / no-face
+    object_grammar: ""
+    text_density: ""                   # 2–3 words / 3–5 words / phrase
+    a_b_testing_protocol: ""
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 8 — Distribution & Algorithm Surface (7%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+distribution_algorithm:
+  title_strategy:
+    formula_in_use: "4-pillar split"
+    primary_pillar: ""
+    title_length_band: ""              # short (4–6) / medium (7–10) / long (10+)
+    keyword_strategy: ""
+
+  description_template:
+    description_path: "reference/templates/description.md"
+    timestamp_default: true
+    link_stack_template: []
+
+  end_screens:
+    default_pattern: ""                # next-video + playlist / next-video + subscribe / next-video only
+    next_video_logic: ""               # belief-installation-path / suggested-by-algorithm / manual
+
+  cards:
+    cards_per_video_default: 2
+    card_placement_strategy: ""
+
+  community_tab_cadence:
+    posts_per_week: 0
+    post_types_in_use: []
+    post_objectives: []
+
+  premiere_strategy:
+    premiere_use: ""                   # always / sometimes / never
+    premiere_chat_strategy: ""
+
+  shorts_to_long_form_bridge:
+    bridge_strategy: ""                # pinned-comment / end-card / description-link
+    expected_long_form_lift_pct: 0
+
+  repurposing_cascade:
+    long_form_to_short_count: 0
+    long_form_to_post_count: 0
+    long_form_to_email_count: 0
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 9 — Audience Building Loop (7%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+audience_building_loop:
+  community_strategy:
+    comment_reply_strategy: ""         # first-hour-only / pinned-replies / full-engagement / minimal
+    comment_reply_voice: ""            # creator-direct / team-with-creator-voice / team-only
+    comment_capture_protocol: ""
+
+  email_pipeline:
+    email_platform: ""                 # ConvertKit / Beehiiv / Mailchimp / Ghost / Substack / Klaviyo
+    list_size: 0
+    primary_lead_magnet: ""
+    secondary_lead_magnets: []
+    welcome_sequence_length_emails: 0
+    welcome_sequence_path: ""
+    nurture_cadence: ""
+    promotion_cadence: ""
+
+  lead_magnet_strategy:
+    primary_lead_magnet:
+      name: ""
+      delivery_format: ""              # PDF / video / Notion / email-course / community-invite
+      value_proposition: ""
+      conversion_rate_target_pct: 0
+    placement_on_videos: []
+
+  superfan_mechanics:
+    top_commenter_recognition: ""
+    case_study_pipeline: ""
+    referral_mechanism: ""
+    advocacy_opt_in_flow: ""
+
+  owned_audience_targets:
+    email_subs_per_month_target: 0
+    email_subs_per_video_target: 0
+    advocate_count_target: 0
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 10 — Sales & Conversion Stack (4%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+sales_conversion_stack:
+  pinned_vsl:
+    url: ""
+    length_minutes: 0
+    structure: ""                      # 15-step / 11-step / 8-belief / custom
+    cta: ""
+    conversion_rate_target_pct: 0
+
+  application_funnel:
+    application_form_url: ""
+    qualification_questions: []
+    booking_tool: ""                   # Calendly / SavvyCal / Acuity / custom
+    confirmation_sequence_length: 0
+
+  sales_call_script:
+    script_path: "reference/templates/sales-call-script.md"
+    closing_methodology: ""            # crossroads / assumptive / question / takeaway
+    discovery_framework: ""            # 8-stage / FST / SPIN
+    pitch_structure: ""
+    objection_handling_path: ""
+
+  post_call_sequence:
+    sequence_path: ""
+    touchpoint_count: 0
+    touchpoint_cadence: []             # T+2h / T+24h / T+72h / T+7d / T+14d
+
+  team:
+    has_setter: false
+    has_closer: false
+    has_sdr: false
+    commission_structure: ""
+
+  show_rate_stack:                     # if call-funnel
+    confirmation_video_url: ""
+    sms_cadence: []
+    dm_cadence: []
+    pre_call_asset_url: ""
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPARTMENT 11 — Operations & Intelligence (2%)
+# ─────────────────────────────────────────────────────────────────────────────
+
+operations_intelligence:
+  team_structure:
+    config: "solo"                     # solo / creator-plus-editor / full-studio
+    roles: []
+    responsibilities: {}
+    communication_protocols: []
+
+  workflows:
+    content_creation_workflow_path: "workflows/divisions/content-creation.yaml"
+    publishing_workflow_path: "workflows/divisions/publishing.yaml"
+    sponsor_integration_workflow_path: "workflows/divisions/sponsor-integration.yaml"
+    launch_workflow_path: "workflows/divisions/launch.yaml"
+
+  ip_licensing:
+    music_library_license: ""
+    stock_footage_license: ""
+    third_party_clip_protocol: ""
+    fair_use_doctrine_log_path: ""
+
+  tech_stack:
+    publishing_tool: "YouTube Studio"
+    analytics_tool: "YouTube Studio"
+    crm: ""                            # GoHighLevel / Hubspot / Close / custom
+    email_platform: ""
+    funnel_builder: ""
+    payment_processor: ""
+    automation_tools: []
+    ai_tools: []
+
+  kpi_dashboard:
+    north_star_metric: ""              # subscribers / inbound-applications / cash-collected / LTV
+    daily_kpis: []
+    weekly_kpis: []
+    monthly_kpis: []
+    quarterly_kpis: []
+
+  attribution:
+    utm_taxonomy: ""
+    application_source_tracking: ""
+    customer_source_tracking: ""
+
+  leak_audit_cadence: "weekly"
+
+  library_compounding:
+    swipe_file_growth_target_per_month: 5
+    framework_extraction_target_per_month: 1
+    pattern_review_cadence: "monthly"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Feature flags
+# ─────────────────────────────────────────────────────────────────────────────
+
+feature_flags:
+  shorts_enabled: true
+  community_tab_enabled: true
+  premieres_enabled: false
+  live_enabled: false
+  members_only_enabled: false
+  sponsor_integrations_enabled: true
+  affiliate_links_enabled: true
+  pinned_vsl_deployed: false
+  application_funnel_deployed: false
+  email_pipeline_deployed: false

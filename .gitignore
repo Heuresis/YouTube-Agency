@@ -1,0 +1,33 @@
+# Creator-private data
+output/
+outputs/
+.creator/
+.private/
+*.private.yaml
+*.private.md
+.anonymization-watchlist
+.watchlist
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Runtime artifacts
+.cache/
+.local/
+.env
+.env.*
+!.env.template
+
+# Logs / runs
+*.log
+runs/
+sessions/
+
+# Notebooks / scratch
+notebook/
+scratch/
+tmp/
