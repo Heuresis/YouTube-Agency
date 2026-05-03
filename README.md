@@ -1,202 +1,197 @@
-# YouTube Content OS
+<div align="center">
 
-**A team of AI agents that runs your YouTube channel like the smartest creator agency on earth — except encoded with YOUR taste, YOUR offer, YOUR voice.**
+<h1>YouTube Agency</h1>
 
-## Imagine if your channel had
+<p><strong>A team of agents running your YouTube channel.</strong></p>
 
-A strategist who knows your niche cold.
-A scriptwriter who sounds exactly like you on a good day.
-A retention engineer who predicts how long viewers will watch — *before* you publish.
-A thumbnail designer who reads what makes the click happen.
-A community manager replying in your voice.
-A sales architect connecting every video to your back-end offer.
-An analyst that diagnoses why one video crushed and another flopped — and feeds the lesson back into next week's content automatically.
+<p>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.0.0-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="Version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="License"></a>
+</p>
 
-All of them. Working 24/7. Getting sharper every week.
+</div>
 
-That's what's inside this folder.
+<br/>
 
-## This is built for
+> **The agent is thin. The workspace is smart. The workspace IS the product.**
 
-- Online coaches turning content into clients
-- Business creators selling info-products
-- Thought leaders building authority for masterminds, courses, agencies
-- Anyone whose YouTube channel is the front door to a real offer
+A team of AI agents running every department of your YouTube channel. Each agent carries *your* taste. Your hook style. Your retention instincts. Your sponsor judgement. Your back-end offer.
 
-If you post on YouTube to make money on the back end — coaching, info-product, mastermind, agency — this is the operating system that runs it.
+Not workflow automation. Encoded intent. The agents don't just follow rules — they make decisions the way you would, read signals the way you read them, and get sharper every cycle.
 
-## Why this is different from anything you've seen
+You stay in the loop where your judgement counts. The rest runs while you sleep.
 
-A YouTube agency charges $5K–$25K a month. They give you titles. Maybe thumbnails. A script outline if you're paying premium. One or two pillars of work. The rest stays improvised.
+## Try it
 
-This template encodes **nine pillars at once.**
+1. Clone:
 
-Niche. Audience. Offer. Channel architecture. Hook + retention engineering. Production. Distribution. Audience building. Sales conversion. Intelligence. Every department of a real creator business — rebuilt as agent-first.
+   ```bash
+   git clone https://github.com/Heuresis/YouTube-Agency.git
+   ```
 
-You own the file system. The runtime is replaceable. The agency stops billing in twelve weeks. The workspace runs forever.
+2. Fill in `company.yaml` with your channel context.
 
-## The thing nobody talks about
+3. Ask for what you need:
 
-Most creators pick one of two modes.
+   ```
+   /build-niche                 a niche definition
+   /build-audience              an ideal viewer profile
+   /design-offer                a back-end offer document
+   /build-channel-architecture  a channel architecture document
+   /idea-farm                   a 20+ idea backlog
+   /write-authority-script      a niched script
+   /write-reach-script          a broad-appeal script
+   /write-pinned-vsl            a pinned video sales letter
+   /title-thumbnail-pair        title + thumbnail concepts with predicted CTR
+   /leak-audit                  a six-layer funnel diagnostic
+   ```
 
-**Niched** — converts hard, never grows past the niche.
-**Broad** — grows fast, never converts.
+Works with Claude, ChatGPT, Cursor, or any AI tool that reads files.
 
-This OS does both.
-
-Authority videos for the niche audience. Reach videos with viral structures pulling non-target viewers in. Channel architecture routes the new viewers to the back-end. The reach video stays clean. The funnel does the conversion in the background.
-
-You stop choosing. The system does both at once.
-
-## How it gets sharper every week
-
-Every video you publish feeds back into the workspace. Patterns extract. Frameworks recalibrate. Voice-of-viewer language refreshes from real comments. The next cycle starts where the last cycle ended.
-
-By cycle 5, the system produces drafts. You validate instead of write.
-
-The compounding gap between you and every creator running on memory widens monthly.
-
-## Try it in 30 minutes
-
-1. Clone this folder.
-2. Fill in `company.yaml` — your offer, your audience, your voice.
-3. Boot it in any AI runtime that reads markdown + YAML (Claude, ChatGPT, Cursor, take your pick).
-4. Ask for what you need.
-
-```
-/build-niche                Niche + sub-niche + adjacent-reach map
-/build-audience             Voice-of-viewer + belief diagnosis + ICP
-/design-offer               Back-end offer architecture
-/build-channel-architecture The path-of-the-viewer across 30+ videos
-/extract-creator-voice      On-camera persona + parasocial-trust contract
-
-/idea-farm                  20+ live ideas across pillars and modes
-/content-mix-strategy       Authority/reach ratio for your channel stage
-/research-brief             Per-video research pack
-/series-architect           5–15 video belief installation sequence
-
-/write-hook                 First-30s hook stack with 3+ retention mechanisms
-/architect-loops            Open-loop placement + close points + callbacks
-/retention-engineer         Script-pass with AVD prediction
-/audit-retention            Post-publish retention curve diagnosis
-
-/write-authority-script     Niched script (belief installation, conversion)
-/write-reach-script         Broad-appeal script (contrast formats, viral)
-/write-shorts-script        Shorts beats
-/thumbnail-brief            Thumbnail composition spec
-/title-thumbnail-pair       Paired concepts with predicted CTR
-/editor-brief               Cuts + b-roll + music + supers direction
-
-/title-options              5–10 title variants by formula
-/description-builder        Description with timestamps + link stack
-/publish-checklist          End-screen, cards, community pre-post
-/repurposing-cascade        1 long-form into 8–12 distribution units
-
-/community-cadence          Comment + community-tab rhythm
-/lead-magnet-bridge         YouTube → email pipeline
-/cross-niche-bridge         Reach traffic → back-end conversion path
-
-/write-pinned-vsl           Your pinned video sales letter
-/build-application-funnel   Application + booking + confirmation stack
-/sales-call-script          Inbound call script tuned to your offer
-/sponsor-fit                Sponsor qualification + integration spec
-
-/build-sop                  Production SOP per team config
-/kpi-dashboard              Daily/weekly/monthly metrics tree
-/leak-audit                 Six-layer weekly funnel diagnostic
-/library-compound           Patterns from this week feed back into the brain
-```
-
-34 skills. Every one a real procedure with hard quality gates. None of them chat.
+Full setup: **[Quickstart](docs/QUICKSTART.md)** · 30 minutes.
 
 ## What's inside the folder
 
+```text
+youtube-agency/
+│
+├── README.md            ←  the pitch
+├── SYSTEM.md            ←  boot file · any AI becomes a YouTube channel operator
+├── INVARIANTS.md        ←  17 sacred rules
+├── ENCODING.md          ←  11-compartment schema
+├── company.yaml         ←  YOUR channel · fill once
+│
+├── agents/              ←  22 AI specialists · an org chart of a real studio
+│      youtube-ceo                  top orchestrator
+│      2 arc orchestrators  ·  8 department heads  ·  11 specialists
+│
+├── skills/              ←  34 capabilities · each produces one asset
+│   │
+│   │   FOUNDATIONS
+│   ├── /build-niche                  Niche definition
+│   ├── /build-audience               Audience intelligence
+│   ├── /design-offer                 Back-end offer
+│   ├── /build-channel-architecture   Channel architecture document
+│   └── /extract-creator-voice        Brand voice + on-camera persona
+│   │
+│   │   CONTENT ENGINE
+│   ├── /idea-farm                    Rolling backlog of ideas
+│   ├── /research-brief               Per-video research pack
+│   ├── /content-mix-strategy         Authority/reach ratio
+│   └── /series-architect             Multi-video belief sequence
+│   │
+│   │   HOOK & RETENTION
+│   ├── /write-hook                   First-30s hook stack
+│   ├── /architect-loops              Open-loop placement
+│   ├── /retention-engineer           AVD prediction pass
+│   └── /audit-retention              Post-publish curve diagnosis
+│   │
+│   │   PRODUCTION
+│   ├── /write-authority-script       Niched script
+│   ├── /write-reach-script           Broad-appeal script
+│   ├── /write-shorts-script          Shorts script
+│   ├── /thumbnail-brief              Thumbnail spec
+│   ├── /title-thumbnail-pair         Title + thumbnail pair
+│   └── /editor-brief                 Editor brief
+│   │
+│   │   DISTRIBUTION
+│   ├── /title-options  ·  /description-builder  ·  /publish-checklist  ·  /repurposing-cascade
+│   │
+│   │   AUDIENCE & MONETIZATION
+│   ├── /community-cadence  ·  /lead-magnet-bridge  ·  /cross-niche-bridge
+│   ├── /write-pinned-vsl  ·  /build-application-funnel
+│   └── /sales-call-script  ·  /sponsor-fit
+│   │
+│   │   OPERATIONS  ·  INTELLIGENCE
+│   └── /build-sop  ·  /kpi-dashboard  ·  /leak-audit  ·  /library-compound
+│
+└── reference/           ←  the brain that makes skills smart
+    ├── frameworks/             38 methodology docs
+    ├── operators/              12 archetyped playbooks
+    ├── platforms/              long-form · Shorts · Live · Community Tab
+    ├── playbooks/              8 multi-step playbooks
+    ├── swipe-file/             262 anonymized specimens (hooks · intros · scripts · titles · thumbnails · contrast formats · series)
+    ├── templates/              11 output templates
+    ├── benchmarks/             real performance bands by niche
+    ├── verticals/              8 vertical packs
+    └── canonical/              architecture bible + canonical specs
 ```
-youtube-content-os/
-├── README.md             ← the pitch
-├── SYSTEM.md             ← the brain transplant — any AI becomes your channel operator
-├── INVARIANTS.md         ← 17 sacred rules — never broken, no exceptions
-├── ENCODING.md           ← 11 compartments — everything we encode about you
-├── company.yaml          ← YOUR encoded brain — fill once
-│
-├── agents/               ← 22 specialists organized as a real org chart
-├── skills/               ← 34 things they can do — every skill a procedure, not a chat
-├── reference/            ← 372 files of brain food
-│   ├── frameworks/             38 methodology docs (loop system, hook formulas, eight beliefs, BUT-THEREFORE engine, contrast formats…)
-│   ├── operators/              12 anonymized operator-archetype playbooks
-│   ├── swipe-file/             262 anonymized structural specimens (hooks, intros, scripts, titles, thumbnails, contrast formats, series)
-│   ├── playbooks/              8 multi-step playbooks (channel launch, viral postmortem, sponsor integration, pinned VSL deployment, more)
-│   ├── benchmarks/             real performance bands by niche (CTR, AVD, RPM, sponsor CPM)
-│   ├── verticals/              sub-vertical playbooks (finance, business, mindset, tech, fitness, real estate, productivity, creator economy)
-│   ├── platforms/              long-form, Shorts, Live, Community Tab deep dives
-│   ├── templates/              script templates, thumbnail briefs, sponsor integrations, pinned VSL skeleton
-│   └── canonical/              the architecture bible + canonical specs
-│
-├── workflows/            ← what triggers what, when (cron + webhook + event)
-├── spec/                 ← the rules that catch a bad output before it ships
-│   ├── retention-floor.md         No script approved if predicted AVD is bottom-quartile
-│   ├── title-thumbnail-promise.md Title + thumbnail + first 30s must match — or reject
-│   ├── copyright-fair-use.md      Pre-publish gate on third-party material
-│   ├── sponsor-disclosure.md      FTC + region compliance
-│   ├── BANNED-VOCABULARY.md       The anti-slop filter
-│   ├── CONTEXT-THRESHOLDS.md      Per-skill compartment gates
-│   └── RUNTIMES.md                Adapter contract per runtime
-│
-├── teams/                ← solo / creator+editor / full-studio configurations
-└── docs/                 ← Quickstart in 30 minutes
-```
 
-**606 files. Plain text. Yours.**
+Each file is plain text. Each folder is owned by you. Nothing is locked behind an app.
 
-## What this template encodes that nobody else has
+## Each video ships with
 
-- **The dual-mode strategy.** Authority + reach + the channel architecture that bridges them.
-- **The retention floor.** A script gets rejected before publish if the predicted average view duration falls below the channel's bottom quartile band.
-- **Title-thumbnail-promise alignment.** The silent reason most channels stall. Caught and fixed before publish.
-- **The six-layer leak audit.** When something breaks, find the upstream constraint. Not the downstream symptom.
-- **The encoding flywheel.** Every cycle compounds. The library remembers what worked. The next video starts smarter than the last.
-- **262 structural specimens** mapped to the 8 belief frames, the 5 awareness levels, the 4 hook formulas, and the dual-mode split.
-- **38 frameworks** named at the structural layer, not the operator layer. Survives every platform shift.
-- **12 operator archetype dossiers** — the structural playbooks of the world's best creators, encoded without naming a single person.
+- **Script** — authority or reach mode, hook density verified, retention floor cleared
+- **Title + thumbnail pair** — promise-aligned to the first 30 seconds
+- **Editor brief** — cuts, b-roll, music, supers per the channel's editing rhythm
+- **Description** — timestamps + link stack matching the channel architecture
+- **Publish checklist** — end-screens, cards, community-tab pre-post, premiere config
+- **Repurposing cascade** — 1 long-form into 8–12 distribution units (Shorts, posts, threads, email)
+- **Post-publish audit** — retention curve diagnosed at T+7 days; pattern fed back into the library
 
-## Runs anywhere that reads files
+Every action leaves a receipt. Every video updates the encoded brain. Every cycle, the channel gets sharper.
 
-The workspace is plain markdown + YAML. Files run in any compatible runtime:
+## Runs while you sleep
 
-- Claude — interactive sessions, slash commands
-- ChatGPT — Custom GPT pointed at the workspace
-- Cursor — composer + agent mode
-- BusinessOS — desktop operating environment for operator teams
+Wire the workspace into a runtime with **cron, webhook, and event triggers**. The agents keep working without you in the room.
+
+- **Daily 06:00 (cron)** — idea-farmer queues new candidates from comments, suggested, and trends
+- **Monday 09:00 (cron)** — leak-auditor runs the six-layer funnel review, sends report
+- **On `video.published` (event)** — repurposing-cascade fires; T+7d audit-retention queued
+- **On `application.received` (webhook)** — qualification + routing through the application funnel
+- **On `call.completed` (event)** — post-call sequence kicks off
+- **Continuous (event)** — title-strategist watches CTR, suggests retitles after 48h if underperforming
+
+Triggers are declared in [`paperclip.manifest.yaml`](paperclip.manifest.yaml). Wire them to your scheduler and the workspace operates as a 24/7 channel team.
+
+## What you get
+
+**9 agent-first pillars. 22 agents. 34 skills.**
+
+- **Foundations** — niche · audience · offer · channel architecture · creator voice
+- **Content Engine** — idea farm · research · dual-mode mix · series architecture
+- **Hook & Retention** — hook formulas · loop architecture · retention engineering · post-publish audit
+- **Production** — authority + reach + Shorts scripts · thumbnails · editor briefs
+- **Distribution** — titles · descriptions · publish checklists · repurposing cascades
+- **Audience Building** — community · email pipeline · cross-niche bridge
+- **Monetization & Sales** — pinned VSL · application funnel · sales scripts · sponsor fit
+- **Operations** — SOPs per team configuration
+- **Intelligence** — KPI dashboard · leak audits · library compound
+
+Each pillar is not a set of rules. Each is a full department rebuilt as agent-first — agents that carry your intent, read signals, and make decisions.
+
+## Runs in any compatible agent runtime
+
+The workspace is files. Files run anywhere that reads files.
+
+- **[Paperclip](https://github.com/paperclip-dev/paperclip)** — open-source agentic runtime with cron, webhook, and event triggers
+- **Claude** · **ChatGPT** · **Cursor** — interactive sessions and slash-command execution
+- **Claude Agent SDK** — API-driven orchestration
+- **BusinessOS** — desktop operating environment for operator teams
 - Any HTTP orchestrator that speaks OpenAPI
 
-Switch the runtime. The workspace doesn't care. The brain stays yours.
+Runtime-swappable. Your workspace is the asset. The runtime is replaceable.
 
 ## Why this matters
 
-Every founder-led creator business eventually hits the same wall: the founder IS every department. Strategy. Scripts. Thumbnails. Sales. Decisions stop when you stop.
+Every founder-led creator business eventually hits the same wall: the founder IS every department. The channel stops when the founder stops.
 
-Encoding changes the shape of the week. Your taste. Your hook style. Your retention instincts. Your sponsor judgement. The patterns you carry in your head get written into agents that run each department on your judgement.
+Encoding changes the shape of the week. Your taste — hook style, retention instincts, sponsor judgement, the patterns you carry in your head — gets written into agents that run each department on your judgement. The founder stays. The judgement scales. The channel compounds.
 
-You stay in the loop where your judgement counts. The system runs the rest.
+Every cycle, each department runs it gets sharper. The gap between your channel and every creator operating off memory widens.
 
-The first version of you that runs this is sharper than the latest version of you that doesn't.
+This is one template in the library. More shipping, vertical by vertical. Every outcome claim we publish traces to a real deployment with a real operator. Thesis, method, and source go public on ideas. Receipts wait their turn.
 
-## What you get on day one
+## Documentation
 
-A workspace where any AI agent becomes a YouTube specialist for *your* channel.
-
-A library that compounds.
-
-A diagnostic eye that catches the upstream constraint before you waste a week chasing the wrong fix.
-
-Output that reads like you wrote it — at 1/10th the time.
-
-A path from the post-it note ideas in your head to a fully encoded creator operation that runs without you in the room.
+- [Quickstart](docs/QUICKSTART.md) — setup in 30 minutes
+- [Architecture](docs/ARCHITECTURE.md) — how the folder is built
+- [Channel Architecture](docs/CHANNEL_ARCHITECTURE.md) — designing the path-of-the-viewer
+- [Dual-Mode Content Strategy](docs/DUAL_MODE.md) — when to use authority vs reach
+- [Skill Authoring](docs/SKILL_AUTHORING.md) — write your own agents and skills
 
 ## License
 
-MIT. Free.
+MIT. Free forever.
 
-The template is yours. The encoding is yours. The runtime is replaceable.
-
-A Heuresis workspace template.
+Built by [Syed Hussain](https://heuresis.ai) at [Heuresis](https://heuresis.ai).
