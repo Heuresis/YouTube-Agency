@@ -1,0 +1,20 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Quickstart
+    url: https://github.com/Heuresis/YouTube-Agency/blob/main/docs/QUICKSTART.md
+    about: First time here? Start with the quickstart guide.
+  - name: Architecture
+    url: https://github.com/Heuresis/YouTube-Agency/blob/main/docs/ARCHITECTURE.md
+    about: How the workspace is built — file layout, encoding contract, runtime adapters.
+  - name: Channel Architecture
+    url: https://github.com/Heuresis/YouTube-Agency/blob/main/docs/CHANNEL_ARCHITECTURE.md
+    about: Designing the path-of-the-viewer — long-form to back-end offer.
+  - name: Dual-Mode Strategy
+    url: https://github.com/Heuresis/YouTube-Agency/blob/main/docs/DUAL_MODE.md
+    about: When to use authority vs reach mode — the niche-and-broad ratio.
+  - name: Skill Authoring
+    url: https://github.com/Heuresis/YouTube-Agency/blob/main/docs/SKILL_AUTHORING.md
+    about: Write your own agents and skills.
+  - name: Security
+    url: https://github.com/Heuresis/YouTube-Agency/blob/main/.github/SECURITY.md
+    about: Security issues go to security@heuresis.ai, not public issues.
