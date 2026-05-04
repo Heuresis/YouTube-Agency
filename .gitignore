@@ -31,3 +31,6 @@ sessions/
 notebook/
 scratch/
 tmp/
+
+# ---- Convert build artifacts ----
+build/
