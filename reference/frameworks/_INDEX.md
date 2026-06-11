@@ -10,7 +10,7 @@ status: complete
 >
 > Audience: online coaches, business creators, info-product owners, and thought-leaders who use a YouTube channel as the top of an owned-offer funnel.
 
-## Complete frameworks (32)
+## Complete frameworks (47)
 
 | Slug | Name | Pillar | Mode | Brief description |
 |---|---|---|---|---|
@@ -46,6 +46,21 @@ status: complete
 | engagement-heat-map-method | Engagement Heat Map Method | intelligence | both | Replay-hotspot analysis for competitor research |
 | dual-mode-content-strategy | Dual-Mode Content Strategy | content | both | Authority + Reach as parallel modes on a single channel |
 | contrast-narrative-formats | Contrast Narrative Formats | content | reach | 1-vs-9-5 / Before-vs-After / Then-vs-Now templates |
+| market-sophistication-five-stages | Market Sophistication — Five Stages | foundations | both | Naive → Aware → Skeptical → Burned → Exhausted; stage-detection signals + what each stage demands of hooks/mechanisms/proof |
+| four-belief-layers | Four Belief Layers | monetization | authority | Ownership / possibility / fit / timing — the stacked beliefs under every purchase, with the "why they ghost" diagnostic |
+| six-principles-of-influence | Six Principles of Influence (+ Unity) | cross-cutting | both | The seven compliance levers mapped per surface: video, community post, DM, sales call, landing page |
+| direct-response-copy-principles | Direct-Response Copy Principles | content | both | Market > Message > Media, A-Pile vs B-Pile, Proof/Promise/Story, reason-why — recast to titles/thumbnails/hooks/descriptions |
+| limiting-belief-triad | Limiting Belief Triad | audience | both | Worthless / Helpless / Hopeless — diagnosing the dominant viewer-side blocker and its required install |
+| market-hierarchy-matrix | Market Hierarchy Matrix (Awareness × Sophistication) | content | both | The 25-cell positioning matrix; which content frame plays each cell |
+| system1-system2-persuasion | System 1 / System 2 Persuasion | retention | both | Fast/slow cognition split: hook duty vs mechanism duty, four decision biases, the fatigue curve |
+| awareness-niche-distribution | Awareness Niche-Distribution Method | audience | both | Estimate a niche's awareness mix from observable signals; derive the content split from the mix |
+| authority-provocation-archetype | Authority-Provocation Archetype | foundations | authority | The 8-component public-figure structure with the operator dial that prevents guru drift |
+| four-community-markers | Four Community Markers | audience | both | Sacred vocabulary, binary in/out, shared ritual, mission-over-transaction — measurable gravity indicators |
+| community-to-customer-translation | Community-to-Customer Translation | monetization | authority | Vocabulary→copy, binary→positioning, ritual→cadence, mission→manifesto — the marker-to-funnel conversion map |
+| five-emotional-pillars | Five Emotional Pillars of Community | audience | both | Belonging, identity, safety, agency, meaning — the felt layer under the community markers, with dark mirrors |
+| parasocial-ethical-guardrails | Parasocial Ethical Guardrails | cross-cutting | both | The 5 red-flag manipulation patterns + recovery protocol + quarterly ethics review (operationalizes INV-16/17) |
+| zero-sum-positioning-test | Zero-Sum Positioning Test | content | both | Every topic is a ranking contest; pre-write competitive scan + the "does this beat the champion video?" gate |
+| planning-vs-spoken-language | Planning vs Spoken Language | content | both | Structural tools live in planning artifacts only; the spoken script carries their effects, never their vocabulary |
 
 ## Stubs flagged for cycle 2 (6)
 
@@ -61,7 +76,7 @@ status: complete
 ## Cross-cutting principles (referenced inside frameworks, not separate files)
 
 - **The ABBB rule** — Always Be Breaking Beliefs (referenced in Eight Required Beliefs, content gating)
-- **The zero-sum game principle** — every view a competitor earns is a view your channel doesn't (referenced in 20/80 Inversion)
+- **The zero-sum game principle** — every view a competitor earns is a view your channel doesn't (now a complete framework: `zero-sum-positioning-test`; referenced in 20/80 Inversion)
 - **"Feels like watching TV"** — body content is narrative that happens to teach (referenced in Re-Hook → Story → Lesson)
 - **The 90-second CTA placement** — casual resource CTA at 90s outperforms end-of-video CTA (referenced in Lead Generation Engine, see also intro specimen 027)
 - **Lifestyle congruence — 60% aspiration / 40% value** (referenced in Personal Brand Framework, Section 6)
@@ -74,20 +89,20 @@ status: complete
 
 | Pillar | Complete framework count | Stub count |
 |---|---|---|
-| foundations | 4 | 1 |
-| content | 13 | 1 |
-| retention | 3 | 0 |
+| foundations | 6 | 1 |
+| content | 19 | 1 |
+| retention | 4 | 0 |
 | production | 1 | 1 |
 | distribution | 1 | 2 |
-| audience | 2 | 1 |
-| monetization | 4 | 0 |
+| audience | 6 | 1 |
+| monetization | 6 | 0 |
 | intelligence | 1 | 0 |
-| cross-cutting | 1 | 0 |
+| cross-cutting | 3 | 0 |
 
 ## Mode coverage summary
 
 | Mode | Framework count |
 |---|---|
-| both | 27 |
-| authority | 6 |
-| reach | 5 |
+| both | 39 |
+| authority | 10 |
+| reach | 4 |
