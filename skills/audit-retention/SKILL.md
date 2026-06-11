@@ -23,7 +23,7 @@ verification_layers: [formal, semantic, info-theoretic]
 # Audit Retention
 
 ## Purpose
-Diagnose a published video's retention curve. Identify drop zones, root cause per drop, and produce a fix-path. Outputs a retention postmortem with anonymized swipe-file entries and an optional library-compound entry. Feeds the encoding flywheel.
+Diagnose a published video's retention curve. Identify drop zones, root cause per drop, and produce a fix-path. The output feeds a full loop: top-decile videos → `reference/swipe-file/` pattern entries; bottom-decile videos → postmortem entries; and **both** verdicts log to `workspace/published/_ANALYTICS.md`, which re-ranks `workspace/pipeline/SLATE.md` so the next cycle's slate reflects what actually performed.
 
 ## Decision Logic
 Retention curves are diagnostic. The shape tells you:
@@ -66,8 +66,8 @@ If video is in top or bottom decile, articulate what worked / what didn't.
 ### Step 5 — Fix-path
 For each cause, specify the upstream skill that produces the fix.
 
-### Step 6 — Library-compound entry (optional)
-If the video deserves a swipe-file entry (top-decile) or a postmortem entry (bottom-decile), draft the anonymized entry.
+### Step 6 — Library-compound entry + analytics log
+Top-decile → draft the anonymized `reference/swipe-file/` pattern entry. Bottom-decile → draft the anonymized postmortem entry. Either way (including mid-decile), append the audit verdict to `workspace/published/_ANALYTICS.md` — that log is what re-ranks `workspace/pipeline/SLATE.md` for the next cycle.
 
 ### Step 7 — Verify
 Banned-vocab, anonymization (no real channel names), Truth Gate.
@@ -107,8 +107,11 @@ Banned-vocab, anonymization (no real channel names), Truth Gate.
 | Title-thumbnail mismatch | /title-thumbnail-pair | re-pair against first-30s promise |
 | ... |
 
-## 5. Library-Compound Entry (optional)
-[anonymized swipe-file or postmortem entry per `/library-compound` format]
+## 5. Library-Compound Entry (top/bottom decile)
+[anonymized swipe-file pattern entry (top-decile) or postmortem entry (bottom-decile) per `/library-compound` format]
+
+## 6. Analytics Log Line
+[the verdict row appended to `workspace/published/_ANALYTICS.md` + any resulting `workspace/pipeline/SLATE.md` re-rank notes]
 
 ---
 SIGNAL: S = (ANALYZE, INFORM, youtube.retention.audit.postpublish, MARKDOWN, 0.7)
@@ -134,7 +137,7 @@ GAPS: [...]
 
 ## Related Skills
 - Upstream: published video + analytics
-- Downstream: `/library-compound`, `/leak-audit`, every upstream skill named in fix-path
+- Downstream: `/library-compound`, `/leak-audit`, every upstream skill named in fix-path; `workspace/published/_ANALYTICS.md` → `workspace/pipeline/SLATE.md` re-rank
 - Alternative: none
 
 ## Failure Modes

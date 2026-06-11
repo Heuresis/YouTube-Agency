@@ -1,4 +1,4 @@
-# Skills Catalog — 34 skills across 9 pillars
+# Skills Catalog — 35 skills across 9 pillars
 
 > Every skill is a runtime-agnostic decision procedure. Every skill declares the compartments it requires (per `spec/CONTEXT-THRESHOLDS.md`), the frameworks it applies, the verification gates it runs, and the agent persona that shapes its voice.
 >
@@ -34,16 +34,19 @@
 | retention-engineer | `/retention-engineer` | sonnet | retention-head | retention-head | both |
 | audit-retention | `/audit-retention` | opus | retention-head | postmortem-analyst | both |
 
-## Production (6)
+## Production (7)
 
 | Skill | Command | Tier | Owner | Executor | Mode |
 |---|---|---|---|---|---|
+| write-script ★ | `/write-script` | opus | content-head | script-writer | both |
 | write-authority-script | `/write-authority-script` | opus | content-head | script-writer | authority |
 | write-reach-script | `/write-reach-script` | opus | content-head | script-writer | reach |
 | write-shorts-script | `/write-shorts-script` | sonnet | content-head | script-writer | both (shorts) |
 | thumbnail-brief | `/thumbnail-brief` | sonnet | production-head | thumbnail-designer | both |
 | title-thumbnail-pair | `/title-thumbnail-pair` | opus | production-head | thumbnail-designer | both |
 | editor-brief | `/editor-brief` | sonnet | production-head | production-head | both |
+
+★ `/write-script` is the **per-video default entry point** — the orchestrator that runs gather → strategy → structure → execute → reconcile → QA end-to-end and hands off to the mode-specific runtimes (`/write-authority-script`, `/write-reach-script`, `/write-shorts-script`) for mode-specific depth.
 
 ## Distribution (4)
 
@@ -87,12 +90,24 @@
 
 ---
 
-## Total: 34 skills across 9 pillars
+## Total: 35 skills across 9 pillars
+
+## The per-video pipeline
+
+The default execution path for one video, in INV-2 dependency order:
+
+`/idea-farm` → `/research-brief` → `/write-script` ★ → `/title-thumbnail-pair` → `/description-builder` → `/editor-brief` → `/publish-checklist` → `/repurposing-cascade`
+
+then post-publish: `/audit-retention` + `/library-compound` — the results re-rank the slate and compound the library for the next cycle.
+
+`/write-script` is the per-video default entry point for the scripting stage: it applies the component logic of `/write-hook`, `/architect-loops`, and `/retention-engineer` in-line, and hands off to `/write-authority-script` / `/write-reach-script` / `/write-shorts-script` when mode-specific depth is warranted.
+
+Every script that exits the pipeline passes the five voice gates — banned-vocab clear · no spoken BUT/THEREFORE · read-aloud clean · Blind Output Test · signal-check — per `spec/voice-gates.md`.
 
 ## Routing logic
 
 When the user names what they need, the OS:
-1. Classifies intent against the 34 skill descriptions
+1. Classifies intent against the 35 skill descriptions
 2. Reads the matching skill's `SKILL.md`
 3. Runs the six-layer diagnostic (Audience / Offer / Topic-Hook / Retention / Distribution / Conversion)
 4. Verifies compartment thresholds per the skill's `required_compartments`
@@ -149,10 +164,12 @@ Every skill output passes Triple-Layer Verification (formal 40 + semantic 35 + i
 - INV-14 copyright/fair-use clear
 - INV-15 sponsor disclosure (when applicable)
 
+Script-producing skills additionally pass the five voice gates — banned-vocab clear · no spoken BUT/THEREFORE · read-aloud clean · Blind Output Test ≥ 7 · signal-check ≥ 7 — per `spec/voice-gates.md`.
+
 See `reference/canonical/spec/QUALITY.md` and `reference/canonical/spec/BLIND-OUTPUT-TEST.md`.
 
 ---
 
-*Version: 1.1.0 — 2026-05-03. The complete decision-procedure catalog of YouTube Content OS.*
+*Version: 1.2.0 — 2026-06-11. The complete decision-procedure catalog of YouTube Content OS.*
 
 *A Heuresis workspace template.*

@@ -193,7 +193,8 @@ NO_INCOME_CLAIMS: PASS | FAIL
 - Voice fidelity (phrases_to_use density ≥ 50%)
 
 ## Related Skills
-- Upstream: `/build-audience`, `/design-offer`, `/build-channel-architecture`, `/extract-creator-voice`
+- Upstream skills: `/build-audience`, `/design-offer`, `/build-channel-architecture`, `/extract-creator-voice`
+- Upstream documents (what this skill actually reads — documents-read beats skills-that-produce): `company.yaml` `offer_architecture` compartment (value stack, mechanism, pricing, guarantee structure) + `workspace/STRATEGY.md` (positioning, funnel position, belief sequence) + `workspace/VOICE.md` (spoken-voice rules, `phrases_to_use`/`phrases_to_avoid`). If a document is missing or below threshold, run the upstream skill that produces it before writing a line.
 - Downstream: `/build-application-funnel`, `/sales-call-script`
 - Alternative: short-form pitch video (different skill, different conversion strategy)
 

@@ -21,18 +21,18 @@ verification_layers: [formal, semantic, info-theoretic]
 # Library Compound
 
 ## Purpose
-Operate the encoding flywheel. Extract patterns from successful and failed outputs across the channel + program + audience and compound them into the swipe-file (anonymized specimens), framework annotations (creator-specific calibrations), hook-bank tier-up, retention-curve signature updates, and KPI band recalibrations. This skill makes the OS smarter every cycle.
+Extract patterns from successful and failed outputs across the channel + program + audience and compound them into three concrete targets: `reference/swipe-file/` (anonymized specimens, framework-tagged, filed by asset type), `reference/frameworks/` annotations (creator-specific calibrations appended to the framework files), and `workspace/published/` records (the per-video performance log, including postmortems). Plus hook-bank tier-up, retention-curve signature updates, and KPI band recalibrations. This skill makes the OS smarter every cycle.
 
 ## Decision Logic
-The encoding flywheel is the long-term moat. Each cycle:
-- Outputs that performed in top-decile become swipe-file entries (anonymized, framework-tagged) for cycle-N+1 reference
-- Outputs that performed in bottom-decile become postmortem entries (anonymized) — patterns to avoid
-- Frameworks calibrated against actual channel performance get annotations ("for this creator, this framework runs at X parameter")
+The compound library is the long-term moat, and it accumulates into named paths — every cycle, the same three destinations:
+- Outputs that performed in top-decile become `reference/swipe-file/` entries (anonymized, framework-tagged, filed under `hooks/` `intros/` `scripts/` `titles/` `thumbnails/` etc.) for cycle-N+1 reference
+- Outputs that performed in bottom-decile become postmortem entries (anonymized) in `workspace/published/` — patterns to avoid
+- Frameworks calibrated against actual channel performance get annotations appended in `reference/frameworks/` ("for this creator, this framework runs at X parameter")
 - Hook bank tiers based on real hook performance
 - Retention curve signatures update from real per-video curves
 - KPI bands recalibrate from real channel data
 
-The swipe-file + annotations form the channel's compound library — by cycle 5+, this library produces drafts so close to creator's voice that the Blind Output Test passes consistently.
+`reference/swipe-file/` + the framework annotations + the `workspace/published/` record are the channel's compound library — by cycle 5+, this library produces drafts so close to creator's voice that the Blind Output Test passes consistently.
 
 ## Tacit Principles
 1. **Anonymize all outputs.** Swipe-file is for imitation surface, not attribution. Never name the original.
@@ -58,19 +58,19 @@ operations_intelligence ≥ 40.
 - Existing swipe-file + framework annotations
 
 ### Step 2 — Identify top-decile outputs
-Best-performing videos / hooks / titles / thumbnails / scripts. Anonymize.
+Best-performing videos / hooks / titles / thumbnails / scripts. Anonymize. These become `reference/swipe-file/` entries, filed by asset type.
 
 ### Step 3 — Extract patterns
 What made them work? Framework + structure + voice element + audience-fit + mode-fit.
 
 ### Step 4 — Identify bottom-decile outputs
-Worst-performing. Anonymize.
+Worst-performing. Anonymize. These become postmortem records in `workspace/published/`.
 
 ### Step 5 — Postmortem patterns
 What failed? Framework misapplication / voice drift / audience mismatch / INV violation.
 
 ### Step 6 — Framework annotations
-For each framework that's been used 5+ times: how does it actually run on this channel? What parameters worked / didn't?
+For each framework that's been used 5+ times: how does it actually run on this channel? What parameters worked / didn't? Append the calibration note to the framework's file in `reference/frameworks/`.
 
 ### Step 7 — Hook-bank tier update
 Tier hooks 1-3 based on actual performance.
