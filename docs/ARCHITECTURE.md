@@ -7,7 +7,7 @@
 ## Top-level layout
 
 ```
-youtube-content-os/
+youtube-agency/
 ├── README.md             ← the pitch
 ├── SYSTEM.md             ← brain transplant (any AI becomes a YouTube channel operator)
 ├── INVARIANTS.md         ← 17 sacred rules
@@ -18,13 +18,15 @@ youtube-content-os/
 ├── .gitignore
 ├── paperclip.manifest.yaml
 │
+├── workspace/            ← the operating layer · the channel's living documents
 ├── agents/               ← 22 AI specialists organized as a real org chart
-├── skills/               ← 33 capabilities · each produces one asset
+├── skills/               ← 35 capabilities · each produces one asset
 ├── reference/            ← the brain that makes skills smart
 ├── workflows/            ← multi-step automations (cron · webhook · event)
-├── spec/                 ← invariants · context thresholds · banned vocab · YouTube-specific gates
+├── spec/                 ← invariants · context thresholds · banned vocab · voice gates · YouTube-specific gates
 ├── teams/                ← 3 team configurations (solo · creator+editor · full-studio)
-├── prompts/              ← boot · interview-mode prompts
+├── prompts/              ← boot · interview-mode · 10 fast-lane prompt packs
+├── scripts/              ← installers · format converters · package renderer
 ├── docs/                 ← Quickstart · Architecture · Channel Architecture · Dual-Mode · Skill Authoring
 └── .claude/commands/     ← slash command bindings (Claude Code)
 ```
@@ -61,11 +63,26 @@ The spine (5 root files) is the brain transplant. Any AI agent that reads:
 
 ---
 
+## What the workspace does
+
+`workspace/` is the operating layer — the channel's living documents, where `company.yaml` is the structured encoding the OS boots from:
+
+- The 4-doc profile, in reading order: `STRATEGY.md` (why) → `VOICE.md` (how it sounds) → `PROOF-BANK.md` (what's true) → `CONTENT-ENGINE.md` (what shape)
+- `CALIBRATION.md` — the override layer that binds every generic skill to this specific channel
+- `STATUS.md` — the reconciliation ledger (mandate → built → pruned → next)
+- The proof-gated video lifecycle: `pipeline/SLATE.md` (ranked by conversion-assist) → `pipeline/PITCHES.md` → `film-this-week/` → `drafts/` (script → spoken-pass → packaging) → `published/`
+- The feedback loop: `published/_ANALYTICS.md` — the scoreboard whose reads re-rank the slate
+- `prompts/` — 9 creator-calibrated generators, including `signal-check.md`, the 0–10 ship gate
+
+The iron rule of the layer: every on-screen number traces to a `PROOF-BANK.md` row tagged `[VERIFIED]`, `[CONFIRM]`, or `[NEEDS-PROOF]` — and a video cannot move to `film-this-week/` until its row is `[VERIFIED]` (INV-6 in operation).
+
+---
+
 ## What the reference library does
 
 `reference/` is the compounding knowledge. Every cycle, it gets sharper:
 
-- `frameworks/` — 30+ methodology docs (loop system, hook formulas, awareness spectrum, etc.)
+- `frameworks/` — 53 methodology docs (loop system, hook formulas, awareness spectrum, belief layers, influence principles, market-hierarchy matrix, community markers, ethical guardrails, etc.)
 - `operators/` — 12 anonymized operator archetypes (long-form-VSL specialist, contrarian-narrator, etc.)
 - `swipe-file/` — 240+ anonymized specimens (hooks, intros, scripts, titles, thumbnails, contrast formats, series)
 - `templates/` — script + thumbnail brief + sponsor integration + channel architecture doc + pinned VSL
@@ -98,12 +115,12 @@ Agents don't have logic. The logic is in skills. Agents have voice, tone, decisi
 
 ## What the skills do
 
-`skills/` holds 33 decision procedures across 9 pillars:
+`skills/` holds 35 decision procedures across 9 pillars:
 
 - Foundations (5): build-niche, build-audience, design-offer, build-channel-architecture, extract-creator-voice
 - Content Engine (4): idea-farm, research-brief, content-mix-strategy, series-architect
 - Hook & Retention (4): write-hook, architect-loops, retention-engineer, audit-retention
-- Production (6): write-authority-script, write-reach-script, write-shorts-script, thumbnail-brief, title-thumbnail-pair, editor-brief
+- Production (7): write-script (the per-video entry point), write-authority-script, write-reach-script, write-shorts-script, thumbnail-brief, title-thumbnail-pair, editor-brief
 - Distribution (4): title-options, description-builder, publish-checklist, repurposing-cascade
 - Audience Building (3): community-cadence, lead-magnet-bridge, cross-niche-bridge
 - Monetization & Sales (4): write-pinned-vsl, build-application-funnel, sales-call-script, sponsor-fit
@@ -124,7 +141,7 @@ For details on writing your own skills, see [SKILL_AUTHORING.md](SKILL_AUTHORING
 - `handoffs/` — department-to-department contracts (e.g., what content-head ships to retention-head)
 - `automations/` — cron / webhook / event triggers (mirrors paperclip.manifest.yaml)
 - `execution-templates/` — multi-step recipes (e.g., a complete viral-postmortem workflow)
-- `client-onboarding/` — the creator intake flow (used when bringing a new creator's context into the OS)
+- `client-onboarding/` — the creator intake flow: `creator-intake-form.md` (artifact gathering) then `intake.md` (the 30-minute expert-download interview)
 
 ---
 
@@ -135,6 +152,7 @@ For details on writing your own skills, see [SKILL_AUTHORING.md](SKILL_AUTHORING
 - `CONTEXT-THRESHOLDS.md` — which skills can run when (per-skill compartment gates)
 - `BANNED-VOCABULARY.md` — anti-slop filter
 - `RUNTIMES.md` — adapter contract per runtime
+- `voice-gates.md` — the five ship gates (banned-vocab clear · no spoken BUT/THEREFORE · read-aloud clean · Blind Output Test ≥ 7 · signal-check ≥ 7)
 - `retention-floor.md` — INV-9 enforcement (predicted-AVD gate before script approval)
 - `title-thumbnail-promise.md` — INV-10 enforcement (alignment between title, thumbnail, first 30s)
 - `copyright-fair-use.md` — INV-14 enforcement (publish gate on third-party material)
@@ -179,25 +197,27 @@ A change to a sacred-format file is logged in CHANGELOG.md with the rationale.
 | Category | Files |
 |---|---|
 | Spine + repo hygiene | 9 |
-| spec/ | 7 |
+| spec/ | 8 |
 | reference/canonical/ | 5 |
 | agents/ | 23 |
-| skills/ | ~165 |
-| reference/frameworks/ | ~33 |
+| workspace/ | 23 |
+| skills/ | ~170 |
+| reference/frameworks/ | 54 |
 | reference/operators/ | ~13 |
 | reference/swipe-file/ | 240+ |
 | reference/playbooks/ | 9 |
-| reference/templates/ | 11 |
+| reference/templates/ | 13 |
 | reference/benchmarks/ | 9 |
 | reference/verticals/ | ~9 |
-| reference/integrations/ | ~10 |
-| workflows/ | ~25 |
+| reference/integrations/ | ~11 |
+| workflows/ | ~26 |
 | teams/ | 3 |
 | docs/ | 5 |
-| prompts/ | 2 |
-| .claude/commands/ | ~33 |
+| prompts/ | 13 |
+| scripts/ | 4+ |
+| .claude/commands/ | 35 |
 
-**Total: ~620 files.** In line with sibling templates.
+**Total: ~680 files.** In line with sibling templates.
 
 ---
 

@@ -14,7 +14,7 @@
 <p><strong>Your YouTube channel, encoded.</strong></p>
 
 <p>
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.0.0-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="Version"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-2.0.0-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="Version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="License"></a>
   <a href="https://heuresis.ai"><img src="https://img.shields.io/badge/a-Heuresis%20workspace-b45309?style=flat-square&labelColor=09090b&color=b45309" alt="Heuresis"></a>
 </p>
@@ -90,6 +90,7 @@ Fill in `company.yaml` with your channel context. Then ask for what you need:
 /design-offer                a back-end offer document
 /build-channel-architecture  a channel architecture document
 /idea-farm                   a 20+ idea backlog
+/write-script                a complete script, end-to-end — the per-video entry point
 /write-authority-script      a niched script
 /write-reach-script          a broad-appeal script
 /write-pinned-vsl            a pinned video sales letter
@@ -145,7 +146,18 @@ youtube-agency/
 │      youtube-ceo                  top orchestrator
 │      2 arc orchestrators  ·  8 department heads  ·  11 specialists
 │
-├── skills/              ←  34 capabilities · each produces one asset
+├── workspace/           ←  the operating layer · YOUR channel's living documents
+│      STRATEGY · VOICE · PROOF-BANK · CONTENT-ENGINE   the 4-doc profile
+│      CALIBRATION.md               binds every skill to this channel
+│      pipeline/ → film-this-week/ → drafts/ → published/   the video lifecycle
+│      published/_ANALYTICS.md      the feedback loop that re-ranks the slate
+│      prompts/                     9 creator-calibrated generators + signal-check gate
+│
+├── agents/              ←  22 specialists · an org chart of a real studio
+│      youtube-ceo                  top orchestrator
+│      2 arc orchestrators  ·  8 department heads  ·  11 specialists
+│
+├── skills/              ←  35 capabilities · each produces one asset
 │   │
 │   │   FOUNDATIONS
 │   ├── /build-niche                  Niche definition
@@ -167,6 +179,7 @@ youtube-agency/
 │   └── /audit-retention              Post-publish curve diagnosis
 │   │
 │   │   PRODUCTION
+│   ├── /write-script              ★  Any script, end-to-end · the per-video entry point
 │   ├── /write-authority-script       Niched script
 │   ├── /write-reach-script           Broad-appeal script
 │   ├── /write-shorts-script          Shorts script
@@ -185,13 +198,19 @@ youtube-agency/
 │   │   OPERATIONS  ·  INTELLIGENCE
 │   └── /build-sop  ·  /kpi-dashboard  ·  /leak-audit  ·  /library-compound
 │
+├── prompts/             ←  the fast lane · 10 one-shot prompt packs
+│      content · repurposing · research · brand-voice · sales
+│      offer · email · VSL · ad-creative · analytics
+│
 └── reference/           ←  the brain that makes skills smart
-    ├── frameworks/             38 methodology docs
+    ├── frameworks/             53 methodology docs — hooks · loops · awareness ·
+    │                           sophistication · belief layers · influence · community ·
+    │                           zero-sum positioning · planning-vs-spoken doctrine
     ├── operators/              12 archetyped playbooks
     ├── platforms/              long-form · Shorts · Live · Community Tab
     ├── playbooks/              8 multi-step playbooks
     ├── swipe-file/             262 anonymized specimens (hooks · intros · scripts · titles · thumbnails · contrast formats · series)
-    ├── templates/              11 output templates
+    ├── templates/              12 output templates + example-scripts calibration corpus
     ├── benchmarks/             real performance bands by niche
     ├── verticals/              8 vertical packs
     └── canonical/              architecture bible + canonical specs
@@ -205,7 +224,7 @@ Each file is plain text. Each folder is owned by you. Nothing is locked behind a
 
 ## Each video ships with
 
-- **Script** — authority or reach mode, hook density verified, retention floor cleared
+- **Script** — authority or reach mode, hook density verified, retention floor cleared, voice gates passed (banned-vocab clear · no spoken BUT/THEREFORE · read-aloud clean · Blind Output Test ≥ 7)
 - **Title + thumbnail pair** — promise-aligned to the first 30 seconds
 - **Editor brief** — cuts, b-roll, music, supers per the channel's editing rhythm
 - **Description** — timestamps + link stack matching the channel architecture
@@ -238,7 +257,7 @@ Triggers are declared in [`paperclip.manifest.yaml`](paperclip.manifest.yaml). W
 
 ## What you get
 
-**9 agent-first departments. 22 agents. 34 skills.**
+**9 agent-first departments. 22 agents. 35 skills. 10 fast-lane prompt packs. A living operating layer.**
 
 - **Foundations** — niche · audience · offer · channel architecture · creator voice
 - **Content Engine** — idea farm · research · dual-mode mix · series architecture
@@ -249,6 +268,7 @@ Triggers are declared in [`paperclip.manifest.yaml`](paperclip.manifest.yaml). W
 - **Monetization & Sales** — pinned VSL · application funnel · sales scripts · sponsor fit
 - **Operations** — SOPs per team configuration
 - **Intelligence** — KPI dashboard · leak audits · library compound
+- **Operating layer** — `workspace/` holds the channel's living documents: strategy, voice, proof bank, content engine, a proof-gated video pipeline, and the published-video analytics loop that re-ranks what you film next
 
 Each department is a full department rebuilt as agent-first — agents that carry your taste, read signals, and make decisions.
 
@@ -306,6 +326,7 @@ What every Heuresis workspace ships with, regardless of which runtime you point 
 | **Encoded judgement** | Agents carry the creator's taste, retention instincts, and quality standards. The workspace replicates the creator's judgement, not their task list. |
 | **Receipt trail** | Every cycle leaves an artefact — a script, a thumbnail brief, a CTR prediction, a retention diagnosis. Auditable end-to-end. |
 | **Compounding library** | Every published video updates the swipe-file, hook bank, and per-niche benchmarks. The encoded brain gets sharper each cycle. |
+| **Proof-gated pipeline** | Every on-screen number traces to a verified proof-bank row. A video cannot move to filming until its proof exists. Claims ship with receipts. |
 | **Trigger-ready** | Cron, webhook, and event triggers declared in a manifest. Wire to any scheduler — daily idea farming, T+7 retention audits, repurposing cascades — and the workspace operates while you sleep. |
 | **Owned outright** | MIT-licensed. Fork it, host it, run it forever. Yours. |
 
@@ -331,13 +352,19 @@ This is one template in the library. More shipping, vertical by vertical. Every 
 
 ## Roadmap
 
-- ✅ 22 agents · 9 pillars · 34 skills shipped
-- ✅ 38 framework docs · 12 operator archetypes · 8 vertical packs
+- ✅ 22 agents · 9 pillars · 35 skills shipped
+- ✅ 53 framework docs · 12 operator archetypes · 8 vertical packs
 - ✅ 262 swipe-file specimens — hooks · intros · scripts · titles · thumbnails · contrast formats
 - ✅ Eleven runtime integrations: Claude Code · Copilot · Gemini · Cursor · Aider · Windsurf · OpenClaw · Qwen · Kimi · OpenCode · Antigravity
 - ✅ Retention floor enforcement · dual-mode strategy
 - ✅ Trigger manifest: cron · webhook · event
 - ✅ Library compound after every publish
+- ✅ `workspace/` operating layer — strategy · voice · proof bank · content engine · proof-gated pipeline · published analytics loop
+- ✅ `/write-script` orchestrator — gather → strategy → structure → execute → reconcile → QA, with voice gates
+- ✅ 10 fast-lane prompt packs — content · repurposing · research · brand-voice · sales · offer · email · VSL · ad-creative · analytics
+- ✅ Persuasion + community frameworks — awareness × sophistication matrix · belief layers · influence principles · parasocial ethical guardrails
+- ✅ Creator intake form + 30-minute expert-download interview
+- ✅ Package renderer — script packaging to client-ready HTML
 - ⚪ Auto-thumbnail generation pipeline
 - ⚪ Comment-mining → idea-farm pipeline
 - ⚪ Sponsor-fit scoring across the catalog

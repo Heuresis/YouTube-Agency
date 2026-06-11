@@ -9,6 +9,20 @@
 # - Lists: leave [] if unknown. The OS will flag the gap.
 # - Integers: leave 0 if unknown. The OS will flag the gap.
 # - Booleans: leave false if unknown.
+# - Confidence tags: when filling any field, prefix the value's source confidence inline:
+#     [SOLID] — verified from the creator's own materials / analytics
+#     [INFER] — reasoned from context; state the basis in a trailing comment
+#     [GAP]   — unknown; needs creator input (leave the rest of the value blank)
+#   Filled examples:
+#     channel_tagline_current: "[SOLID] Systems for scaling service businesses"
+#     persuasion_style: "[INFER] mechanism-first"      # every top video opens on the diagram
+#   The tags turn this file into an audit trail of data quality, not just a config.
+#
+# Relationship to workspace/:
+#   company.yaml = the structured encoding the OS boots from (compartment-scored, machine-read).
+#   workspace/   = the living operating documents — STRATEGY.md, VOICE.md, PROOF-BANK.md,
+#                  CONTENT-ENGINE.md — that the day-to-day prompts read.
+#   Keep the two in sync: /extract-creator-voice writes both; re-encode quarterly.
 #
 # Never check this file into a public remote. Never share verbatim.
 
@@ -21,16 +35,27 @@ creator_identity_matrix:
     creator_name: ""
     channel_name: ""
     channel_handle: ""
+    channel_url: ""                    # full https://www.youtube.com/@handle URL
+    channel_tagline_current: ""        # the banner tagline as it reads TODAY (even if it will change)
+    channel_bio_current: ""            # the channel About text as it reads TODAY
+    contact_email: ""                  # public business-inquiries email
     niche: ""                          # finance / business / mindset / tech / fitness / real-estate / productivity / creator-economy / other
     sub_niche: ""
     business_model: ""                 # coaching / consulting / info-product / mastermind / agency / hybrid
     revenue_tier: ""                   # pre-revenue | $5K-$25K/mo | $25K-$100K/mo | $100K-$500K/mo | $500K+/mo
     years_creating: 0
     total_subscribers: 0
+    total_videos_published: 0
     long_form_avg_views: 0
     short_form_avg_views: 0
     upload_cadence_long: ""            # weekly / biweekly / monthly / irregular
     upload_cadence_short: ""           # daily / weekly / never
+    # Off-YouTube footprint — where the audience already lives. Sizes the repurposing
+    # cascade and gives /extract-creator-voice its raw caption/clip corpus.
+    instagram_handle: ""
+    instagram_followers: 0
+    instagram_avg_views: 0             # rough median across recent reels/posts
+    other_platform_presence: []        # e.g. "X — 12K, daily" / "LinkedIn — 5K, weekly" / "podcast — biweekly"
 
   brand_voice_architecture:
     communication_style: ""            # direct / consultative / storytelling / analytical / contrarian
@@ -38,7 +63,7 @@ creator_identity_matrix:
       primary: ""
       secondary: ""
     personality_traits: []
-    language_patterns: []
+    language_patterns: []              # 3–5 recurring sentence-level patterns (e.g. "names the mechanism, then the number")
     phrases_to_use: []                 # verbatim creator phrases
     phrases_to_avoid: []
     persuasion_style: ""               # authority-by-proof / story-first / mechanism-first / contrarian-provocation

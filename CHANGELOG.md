@@ -4,6 +4,34 @@ All notable changes to this workspace template are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.0.0] — 2026-06-11
+
+### Added — the operating layer + deployment-proven upgrades
+
+- **`workspace/` — the creator operating layer** (23 files). The living documents the day-to-day generators read, distilled from the template's first real channel deployment:
+  - The 4-doc profile: `STRATEGY.md` (why) → `VOICE.md` (how it sounds) → `PROOF-BANK.md` (what's true) → `CONTENT-ENGINE.md` (what shape)
+  - `CALIBRATION.md` — the override layer that binds all 35 skills to one channel (mode-taxonomy rename slot, skill → workspace-input map, performance-intelligence trio)
+  - `STATUS.md` — reconciliation ledger (mandate → built → pruned → next, P0–P4)
+  - Proof-gated pipeline: `pipeline/SLATE.md` (ranked by conversion-assist, gated on verified proof) → `pipeline/PITCHES.md` → `film-this-week/` → `drafts/` (script → spoken-pass → packaging lifecycle) → `published/`
+  - The feedback loop: `published/_TEMPLATE.md` per-video records + `published/_ANALYTICS.md` scoreboard whose reads re-rank the slate
+  - 9 creator-calibrated operator prompts in `workspace/prompts/` — write-script, write-hook, title-thumbnail, signal-check (the 0–10 ship gate), repurpose, IG carousel/reel/story, + authoring template
+- **`/write-script` skill (35th)** — the per-video default entry point: gather → strategy → structure → execute → reconcile → QA. Carries the 20/80 inversion, zero-sum positioning, the ONE-belief rule, and the planning-vs-spoken reconciliation pass
+- **`spec/voice-gates.md`** — the five ship gates: banned-vocab clear · no spoken BUT/THEREFORE · read-aloud clean · Blind Output Test ≥ 7 · signal-check ≥ 7
+- **10 fast-lane prompt packs in `prompts/`** — content, repurposing, research, brand-voice, sales, offer, email, VSL, ad-creative, analytics — one-shot generators with pre-save validation gates, plus `prompts/_INDEX.md` with the prompts-vs-skills lane doctrine
+- **15 new frameworks** (38 → 53) — market-sophistication five stages, four belief layers, six principles of influence, direct-response copy principles, limiting-belief triad, the awareness × sophistication market-hierarchy matrix, System-1/System-2 persuasion, awareness niche distribution, authority-provocation archetype, four community markers, community-to-customer translation, five emotional pillars, parasocial ethical guardrails, zero-sum positioning test, planning-vs-spoken language doctrine
+- **`reference/templates/example-scripts.md`** — calibration corpus: steal the skeleton, never the surface
+- **`workflows/client-onboarding/creator-intake-form.md`** — the artifact-gathering form that precedes the intake interview, with a routing table into workspace + company.yaml compartments
+- **`scripts/render-package.mjs`** — renders a video packaging `.jsx` into self-contained, client-ready HTML
+- **Navigation indexes** — `_INDEX.md` at reference/ root, canonical/, canonical/spec/, platforms/, templates/, examples/, integrations/, prompts/
+
+### Changed
+
+- **`company.yaml`** — added the `[SOLID] / [INFER] / [GAP]` confidence-tag convention (every filled value carries its data-quality source) and 9 new basic_info fields (channel_url, tagline, bio, contact_email, total_videos_published, Instagram presence, other platforms)
+- **`skills/_INDEX.md`** — explicit per-video pipeline sequence (/idea-farm → /research-brief → /write-script → /title-thumbnail-pair → /description-builder → /editor-brief → /publish-checklist → /repurposing-cascade), voice-gates verification line, 35-skill count
+- **`skills/library-compound`** — compounding targets made concrete: reference/swipe-file/ + reference/frameworks/ annotations + workspace/published/ records
+- **`skills/audit-retention`** — full loop documented: top-decile → swipe-file entry, bottom-decile → postmortem, both log to workspace/published/_ANALYTICS.md which re-ranks the slate
+- **`skills/write-pinned-vsl`** — upstream section now lists the documents read, not just the skills that produce them
+
 ## [1.0.0] — 2026-05-03
 
 ### Added — v1 ship state
