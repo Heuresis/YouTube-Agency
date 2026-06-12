@@ -9,7 +9,7 @@ apiVersion: workspace/v1
 kind: PaperclipManifest
 metadata:
   name: youtube-content-os
-  version: 1.0.0
+  version: 2.1.0
   description: Encoded operating system for a creator's YouTube channel — front door to an owned back-end offer.
   author: Heuresis
 

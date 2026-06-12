@@ -49,7 +49,7 @@ print_banner() {
   printf '  │   %sWorkspace%s    %s│\n' "${d}" "${r}" "$(value_pad "${workspace_name}")"
   printf '  │   %sMethod%s       %s│\n' "${d}" "${r}" "$(value_pad "heuresis.ai/method")"
   printf '  │   %sRuntime%s      %s│\n' "${d}" "${r}" "$(value_pad "Claude Code · Cursor · +9 more")"
-  printf '  │   %sLicense%s      %s│\n' "${d}" "${r}" "$(value_pad "MIT")"
+  printf '  │   %sLicense%s      %s│\n' "${d}" "${r}" "$(value_pad "Heuresis Source 1.0")"
   printf '  │                                                 │\n'
   printf '  └─────────────────────────────────────────────────┘\n\n'
 }

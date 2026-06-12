@@ -14,8 +14,8 @@
 <p><strong>Your YouTube channel, encoded.</strong></p>
 
 <p>
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-2.0.0-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="Version"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="License"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-2.1.0-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="Version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Heuresis_Source-09090b?style=flat-square&labelColor=09090b&color=52525b" alt="License"></a>
   <a href="https://heuresis.ai"><img src="https://img.shields.io/badge/a-Heuresis%20workspace-b45309?style=flat-square&labelColor=09090b&color=b45309" alt="Heuresis"></a>
 </p>
 
@@ -328,7 +328,7 @@ What every Heuresis workspace ships with, regardless of which runtime you point 
 | **Compounding library** | Every published video updates the swipe-file, hook bank, and per-niche benchmarks. The encoded brain gets sharper each cycle. |
 | **Proof-gated pipeline** | Every on-screen number traces to a verified proof-bank row. A video cannot move to filming until its proof exists. Claims ship with receipts. |
 | **Trigger-ready** | Cron, webhook, and event triggers declared in a manifest. Wire to any scheduler — daily idea farming, T+7 retention audits, repurposing cascades — and the workspace operates while you sleep. |
-| **Owned outright** | MIT-licensed. Fork it, host it, run it forever. Yours. |
+| **Yours to run** | Source-available. Solo operators run it free, forever. Companies and client work: [Syed@heuresis.ai](mailto:Syed@heuresis.ai). |
 
 <br/>
 
@@ -386,6 +386,8 @@ This is one template in the library. More shipping, vertical by vertical. Every 
 
 ## License
 
-MIT. Free forever.
+**Heuresis Source License 1.0** — see [LICENSE](LICENSE).
+
+Solo developers, passion projects, testing, learning: free. Company use, client deployments, or anything sold: email [Syed@heuresis.ai](mailto:Syed@heuresis.ai) first. Marketing it is welcome — link this repository; it is the sole distribution point. No copies, no rebrands, no resale. Violations get DMCA takedowns and platform copyright complaints.
 
 Built by [Syed Hussain](https://heuresis.ai) at [Heuresis](https://heuresis.ai).

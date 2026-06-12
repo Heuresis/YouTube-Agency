@@ -1,21 +1,153 @@
-MIT License
+HEURESIS SOURCE LICENSE
+Version 1.0 — June 2026
 
-Copyright (c) 2026 Heuresis
+Copyright (c) 2026 Heuresis ("Licensor"). All rights reserved.
+Commercial licensing: Syed@heuresis.ai
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---------------------------------------------------------------------------
+PLAIN-ENGLISH SUMMARY — for orientation only; the numbered terms below
+are the license.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+  - Solo developer, passion project, learning, testing? Use it free.
+  - Using it inside a company or deploying it for a client? Email me
+    first.
+  - Mentioning or marketing it anywhere? Link back to the original repo.
+  - Lead magnet or bonus in your funnel? Allowed — deliver it as a link
+    to this repo, never as your own copy, fork, or download.
+  - Copying it, rebranding it, or selling it as your own — free or
+    paid? Never allowed.
+  - Break these terms and it gets enforced: DMCA takedowns on every
+    copy, copyright complaints to the platforms you market on, and
+    repeat-infringer strikes that take accounts down.
+---------------------------------------------------------------------------
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1. THE SOFTWARE IS PROPRIETARY IP
+
+   The "Software" means every file in this repository — templates,
+   prompts, agents, skills, workflows, documentation, scripts,
+   configuration, and assets. The Software is the intellectual property
+   of the Licensor, made source-available under this license. This is
+   not an open-source license. Every right not expressly granted in
+   Section 2 is reserved.
+
+   The "Canonical Repository" means the repository under
+   github.com/Heuresis from which the Software originates.
+
+2. FREE USE GRANT
+
+   Subject to the conditions in Section 4, the Licensor grants you a
+   worldwide, non-exclusive, non-transferable, revocable, royalty-free
+   license to download, run, use, and modify the Software, only for:
+
+   (a) personal use and passion projects;
+   (b) evaluation, testing, and experimentation;
+   (c) education and research;
+   (d) Solo Use — use by you, one individual, for your own work,
+       including inside your own one-person business.
+
+   Solo Use ends where an organization begins. If the Software or a
+   derivative of it is used by, installed at, deployed for, or operated
+   on behalf of any team, company, agency, or client organization —
+   anything bigger than one person — that is Commercial Use under
+   Section 3.
+
+3. COMMERCIAL USE — CONTACT FIRST
+
+   Any Commercial Use requires a separate commercial license from the
+   Licensor, obtained before the use begins. Commercial Use includes,
+   without limitation:
+
+   (a) use by or within any organization of two or more people;
+   (b) installing, deploying, or operating the Software or a derivative
+       for a client or any third party;
+   (c) selling, reselling, licensing, or sublicensing the Software or
+       any derivative, in whole or in part, at any price — including
+       bundling copies of it into anything sold.
+
+   To obtain a commercial license, email Syed@heuresis.ai and
+   describe what you are building. Commercial licenses are granted
+   routinely; this section exists so the Licensor knows where the
+   Software operates.
+
+4. CONDITIONS ON EVERY USE, FREE OR COMMERCIAL
+
+   (a) Attribution stays. Keep this license file, the copyright notice,
+       and the link to the Canonical Repository in every copy, fork,
+       and derivative.
+
+   (b) Marketing links back. Any public mention, promotion,
+       demonstration, listing, post, or video featuring the Software or
+       a derivative must include a prominent, working link to the
+       Canonical Repository. Creating content about the Software is
+       welcome — provided your audience can follow it back to the
+       source. For brand assets, partnerships, or affiliate
+       arrangements: Syed@heuresis.ai.
+
+   (c) Funnels point home. You may feature the Software in your
+       marketing — including as a lead magnet, bonus, or perk in a paid
+       offer — without a commercial license, provided the Software is
+       delivered only as a link to the Canonical Repository. You may
+       not deliver it as your own copy, mirror, fork, download, or
+       attachment. The Canonical Repository is the sole distribution
+       point of the Software.
+
+   (d) No flipping. You may not republish, redistribute, rebrand, or
+       market the Software or any substantially similar derivative as
+       your own work — free or paid. Forking the Canonical Repository
+       on GitHub for a use permitted by this license is fine;
+       presenting the Software as yours is not.
+
+   (e) No brand rights. This license grants no rights to the "Heuresis"
+       name, logos, or product names, and no right to imply
+       endorsement by the Licensor.
+
+5. ENFORCEMENT
+
+   The Licensor actively enforces this license. For violations —
+   unauthorized copies, mirrors, rebrands, resale, or distribution of
+   the Software from anywhere other than the Canonical Repository —
+   the Licensor will:
+
+   (a) file DMCA takedown notices with GitHub and with any host,
+       marketplace, or payment platform carrying the infringing
+       material;
+
+   (b) file copyright-infringement complaints with every social and
+       content platform where the violation is marketed or distributed
+       — including YouTube, Instagram, TikTok, X, LinkedIn, Whop,
+       Gumroad, and template marketplaces — complaints that generate
+       copyright strikes and, under those platforms' repeat-infringer
+       policies, termination of the infringing account;
+
+   (c) terminate this license under Section 6 and pursue any further
+       remedies available under copyright law.
+
+6. TERMINATION
+
+   This license terminates automatically if you violate it. If you cure
+   a first violation within 30 days of becoming aware of it, the
+   license is reinstated. After termination you must stop all use and
+   distribution of the Software and any derivatives. Sections 7 and 8
+   survive termination.
+
+7. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT.
+
+8. NO LIABILITY
+
+   IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+   OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+9. GENERAL
+
+   This license is the entire agreement between you and the Licensor
+   concerning the Software. If any provision is found unenforceable,
+   the remainder stands. The Licensor may offer the Software under
+   additional or different terms; the license included with your copy
+   governs that copy.

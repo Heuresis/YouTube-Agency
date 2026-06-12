@@ -4,6 +4,14 @@ All notable changes to this workspace template are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.1.0] — 2026-06-12
+
+### Changed — relicensed
+
+- `LICENSE` — replaced MIT with the **Heuresis Source License 1.0**: free for solo developers, passion projects, testing, and education; company use, client deployment, or selling in any form requires a commercial license via [Syed@heuresis.ai](mailto:Syed@heuresis.ai); all marketing must link back to this repository, the sole distribution point; enforced with DMCA takedowns and platform copyright complaints.
+- `README.md` — license badge, ownership row, and License section updated to match.
+- `scripts/lib/banner.sh` — boot banner license line updated.
+
 ## [2.0.0] — 2026-06-11
 
 ### Added — the operating layer + deployment-proven upgrades
